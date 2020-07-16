@@ -3,8 +3,6 @@
 Anúbis
 </h1>
 
-# Overview
-
 A dark theme from Visual Studio Code
 
 - [How to install?](INSTALL.md) 
