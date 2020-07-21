@@ -11,7 +11,7 @@
 
 If you are a git user, you can install the theme and keep up to date by cloning the repo:
 
-    $ git clone https://github.com/Midisoft/anubis-theme-vscode ~/.vscode/extensions/anubis-theme
+    $ git clone https://github.com/midisoft/anubis-theme.git ~/.vscode/extensions/anubis-theme
     $ cd ~/.vscode/extensions/anubis-theme
     $ npm install
     $ npm run build
