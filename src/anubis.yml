@@ -1,54 +1,52 @@
-name: Omni
-author: Rocketseat
+name: Anúbis
+author: Midisoft
 maintainers:
-  - Diego Fernandes <diego.schell.f@gmail.com>
-  - Luke Morales <lukemorales@live.com>
-  - João Pedro Schmitz <hey@joaopedro.dev>
-semanticClass: theme.omni
-omni:
+  - Felipe Bergamaschi <felipeebegamaschi@gmail.com>
+semanticClass: anubis.theme
+anubis:
   base:
-    - &BG                   '#191622'
-    - &FG                   '#E1E1E6'
-    - &SELECTION            '#41414D'
-    - &COMMENT              '#5A4B81'
-    - &CYAN                 '#988bc7'
-    - &GREEN                '#67e480'
-    - &ORANGE               '#E89E64'
-    - &PINK                 '#FF79C6'
-    - &PURPLE               '#78D1E1'
-    - &RED                  '#E96379'
-    - &YELLOW               '#e7de79'
+    - &BG                   '#212d3b'
+    - &FG                   '#F8F8F2'
+    - &SELECTION            '#ffffff1a'
+    - &COMMENT              '#6d7a8a'
+    - &CYAN                 '#8BE9FD'
+    - &GREEN                '#37FA68'
+    - &ORANGE               '#FFB86C'
+    - &PINK                 '#FF73D0'
+    - &PURPLE               '#AA7BE3'
+    - &RED                  '#E8414E'
+    - &YELLOW               '#F1FA8C'
   ansi:
-    - &COLOR0               '#201B2D'
-    - &COLOR1               '#FF79C6'
-    - &COLOR3               '#e7de79'
-    - &COLOR2               '#67e480'
-    - &COLOR4               '#78D1E1'
-    - &COLOR5               '#988bc7'
-    - &COLOR6               '#A1EFE4'
-    - &COLOR7               '#E1E1E6'
-    - &COLOR8               '#626483'
-    - &COLOR9               '#ed4556'
-    - &COLOR11              '#e7de79'
-    - &COLOR10              '#00F769'
-    - &COLOR12              '#78D1E1'
-    - &COLOR13              '#988bc7'
+    - &COLOR0               '#151e27'
+    - &COLOR1               '#E8414E'
+    - &COLOR3               '#37FA68'
+    - &COLOR2               '#F1FA8C'
+    - &COLOR4               '#AA7BE3'
+    - &COLOR5               '#FF73D0'
+    - &COLOR6               '#8BE9FD'
+    - &COLOR7               '#F8F8F2'
+    - &COLOR8               '#6d7a8a'
+    - &COLOR9               '#ed5151'
+    - &COLOR11              '#69FF94'
+    - &COLOR10              '#FFEA99'
+    - &COLOR12              '#D6ACFF'
+    - &COLOR13              '#FF92DF'
     - &COLOR14              '#A4FFFF'
-    - &COLOR15              '#F7F7FB'
+    - &COLOR15              '#ffffff'
   brightOther:
     # Temporary (awaiting fix)
-    - &TEMP_QUOTES          '#e7de79'
-    - &TEMP_PROPERTY_QUOTES '#7159C1'
+    - &TEMP_QUOTES          '#E9F284'
+    - &TEMP_PROPERTY_QUOTES '#8BE9FE'
   other:
-    - &LineHighlight        '#44475A75'
-    - &NonText              '#FFFFFF1A'
-    - &WHITE                '#E1E1E6'
-    - &TAB_DROP_BG          '#44475A70'
+    - &LineHighlight        '#ffffff0d'
+    - &NonText              '#6d7a8a'
+    - &WHITE                '#ffffff'
+    - &TAB_DROP_BG          '#ffffff14'
     # UI Variants
-    - &BGLighter            '#252131'
-    - &BGLight              '#201B2D' # HSV (230   , 25.71, 27.45)
-    - &BGDark               '#13111B' # HSV (234.55, 25   , 17.25)
-    - &BGDarker             '#15121E' # HSV (234.55, 25   , 13   )
+    - &BGLighter            '#424450'
+    - &BGLight              '#1c242f' # HSV (230   , 25.71, 27.45)
+    - &BGDark               '#151e27' # HSV (234.55, 25   , 17.25)
+    - &BGDarker             '#151e29' # HSV (234.55, 25   , 13   )
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:

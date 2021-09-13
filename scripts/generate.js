@@ -12,7 +12,7 @@ const { Type, Schema, load } = require('js-yaml');
 
 /**
  * @typedef {Object} Theme - Parsed theme object.
- * @prop {Record<'base'|'ansi'|'brightOther'|'other', string[]>} omni - Omni color variables.
+ * @prop {Record<'base'|'ansi'|'brightOther'|'other', string[]>} anubis - Anúbis color variables.
  * @prop {Record<string, string|null|undefined>} colors - VSCode color mapping.
  * @prop {TokenColor[]} tokenColors - Textmate token colors.
  */
@@ -31,7 +31,7 @@ const schema = Schema.create([withAlphaType]);
 
 module.exports = async () => {
     const yamlFile = await readFile(
-        join(__dirname, '..', 'src', 'omni.yml'),
+        join(__dirname, '..', 'src', 'anubis.yml'),
         'utf-8'
     );
 

@@ -13,7 +13,7 @@ module.exports = async () => {
 
     return Promise.all([
         fs.promises.writeFile(
-            path.join(THEME_DIR, 'omni.json'),
+            path.join(THEME_DIR, 'anubis.json'),
             JSON.stringify(base, null, 4)
         ),
     ]);

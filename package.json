@@ -1,29 +1,27 @@
 {
-    "name": "theme-omni",
-    "version": "1.0.10",
-    "displayName": "Omni Theme",
-    "homepage": "https://rocketseat.com.br/",
-    "description": "A dark theme made by Rocketseat",
-    "publisher": "rocketseat",
+    "name": "anubis-theme",
+    "version": "1.0.0",
+    "displayName": "Anúbis Theme",
+    "homepage": "https://midisoft.com.br/",
+    "description": "A dark theme made by Midisoft",
+    "publisher": "midisoft",
     "license": "MIT",
     "scripts": {
         "build": "node ./scripts/build.js",
         "lint": "node ./scripts/lint.js",
-        "package": "vsce package -o ./bin/omni.vsix",
+        "package": "vsce package -o ./bin/anubis.vsix",
         "vscode:prepublish": "npm run build",
         "vsce-publish": "vsce publish"
     },
     "maintainers": [
-        "Diego Fernandes <diego.schell.fgmail.com>",
-        "Luke Morales <lukemorales@live.com>",
-        "João Pedro Schmitz <hey@joaopedro.dev>"
+        "Felipe Bergamaschi <felipeebergamashci@gmail.com>"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/getomni/visual-studio-code.git"
+        "url": "https://github.com/midisoft/anubis-theme.git"
     },
     "bugs": {
-        "url": "https://github.com/getomni/visual-studio-code/issues"
+        "url": "https://github.com/midisoft/anubis-theme/issues"
     },
     "engines": {
         "vscode": "^1.13.0"
@@ -32,8 +30,8 @@
         "Themes"
     ],
     "keywords": [
-        "omni",
-        "rocketseat",
+        "anubis",
+        "midisoft",
         "theme",
         "color-theme"
     ],
@@ -45,21 +43,17 @@
     "contributes": {
         "themes": [
             {
-                "label": "Omni",
+                "label": "Anúbis",
                 "uiTheme": "vs-dark",
-                "path": "./theme/omni.json"
+                "path": "./theme/anubis.json"
             }
         ]
     },
     "devDependencies": {
-        "js-yaml": "^3.13.1",
+        "js-yaml": "^3.14.1",
         "prettier": "^1.19.1",
-        "tinycolor2": "^1.4.1",
-        "vsce": "^1.75.0"
-    },
-    "__metadata": {
-        "id": "4e44877c-1c8d-4f9c-ba86-1372d0fbeeb1",
-        "publisherDisplayName": "Omni",
-        "publisherId": "fbb3d024-f8f2-460c-bdb5-99552f6d8c4b"
+        "tinycolor2": "^1.4.2",
+        "underscore": ">=1.12.1",
+        "vsce": "^1.99.0"
     }
 }
