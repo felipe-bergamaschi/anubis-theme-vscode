@@ -1,6 +1,6 @@
 # Learn how to add code owners here:
 # https://help.github.com/en/articles/about-code-owners
 
-*            @midisoft
-.github/*    @midisoft
-*.md         @midisoft
+*            @felipe-bergamaschi
+.github/*    @felipe-bergamaschi
+*.md         @felipe-bergamaschi

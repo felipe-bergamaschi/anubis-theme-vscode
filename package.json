@@ -1,59 +1,57 @@
 {
-    "name": "anubis-theme",
-    "version": "1.0.0",
-    "displayName": "Anúbis Theme",
-    "homepage": "https://midisoft.com.br/",
-    "description": "A dark theme made by Midisoft",
-    "publisher": "midisoft",
-    "license": "MIT",
-    "scripts": {
-        "build": "node ./scripts/build.js",
-        "lint": "node ./scripts/lint.js",
-        "package": "vsce package -o ./bin/anubis.vsix",
-        "vscode:prepublish": "npm run build",
-        "vsce-publish": "vsce publish"
-    },
-    "maintainers": [
-        "Felipe Bergamaschi <felipeebergamashci@gmail.com>"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/midisoft/anubis-theme.git"
-    },
-    "bugs": {
-        "url": "https://github.com/midisoft/anubis-theme/issues"
-    },
-    "engines": {
-        "vscode": "^1.13.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "keywords": [
-        "anubis",
-        "midisoft",
-        "theme",
-        "color-theme"
-    ],
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#17181A",
-        "theme": "dark"
-    },
-    "contributes": {
-        "themes": [
-            {
-                "label": "Anúbis",
-                "uiTheme": "vs-dark",
-                "path": "./theme/anubis.json"
-            }
-        ]
-    },
-    "devDependencies": {
-        "js-yaml": "^3.14.1",
-        "prettier": "^1.19.1",
-        "tinycolor2": "^1.4.2",
-        "underscore": ">=1.12.1",
-        "vsce": "^2.15.0"
-    }
+  "name": "anubis-theme",
+  "version": "1.0.0",
+  "displayName": "Anúbis Theme",
+  "description": "A dark theme made by Felipe Bergamaschi",
+  "publisher": "Felipe Bergamaschi",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "lint": "node ./scripts/lint.js",
+    "package": "vsce package -o ./bin/anubis.vsix",
+    "vscode:prepublish": "npm run build",
+    "vsce-publish": "vsce publish"
+  },
+  "maintainers": [
+    "Felipe Bergamaschi <felipeebergamashci@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipe-bergamaschi/anubis-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felipe-bergamaschi/anubis-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "anubis",
+    "theme",
+    "color-theme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#17181A",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Anúbis",
+        "uiTheme": "vs-dark",
+        "path": "./theme/anubis.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^3.14.1",
+    "prettier": "^1.19.1",
+    "tinycolor2": "^1.4.2",
+    "underscore": ">=1.12.1",
+    "vsce": "^2.15.0"
+  }
 }
