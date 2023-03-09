@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "displayName": "Anúbis Theme",
   "description": "A dark theme made by Felipe Bergamaschi",
-  "publisher": "Felipe Bergamaschi",
+  "publisher": "felipe-bergamaschi",
   "license": "MIT",
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/felipe-bergamaschi/anubis-theme.git"
+    "url": "https://github.com/felipe-bergamaschi/anubis-theme-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/felipe-bergamaschi/anubis-theme/issues"
+    "url": "https://github.com/felipe-bergamaschi/anubis-theme-vscode/issues"
   },
   "engines": {
     "vscode": "^1.13.0"
@@ -30,7 +30,11 @@
   ],
   "keywords": [
     "anubis",
+    "anubis theme",
     "theme",
+    "dark",
+    "dark theme",
+    "blue theme",
     "color-theme"
   ],
   "icon": "icon.png",
