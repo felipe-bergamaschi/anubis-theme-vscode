@@ -6,7 +6,7 @@
 
 <p align="center">
 
-   <img src="https://img.shields.io/static/v1?label=Version&message=1.0&color=212d3b&labelColor=000000" alt="PRs welcome!" />
+   <img src="https://img.shields.io/static/v1?label=Version&message=1.0.1&color=212d3b&labelColor=000000" alt="PRs welcome!" />
 
    <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=212d3b&labelColor=000000">
 
