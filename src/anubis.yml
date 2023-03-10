@@ -3,6 +3,7 @@ author: Midisoft
 maintainers:
   - Felipe Bergamaschi <felipeebegamaschi@gmail.com>
 semanticClass: anubis.theme
+
 anubis:
   base:
     - &BG                   '#212d3b'
@@ -125,13 +126,13 @@ colors:
   progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
-  list.activeSelectionBackground:  !alpha [*SELECTION, 60]                      # List/Tree background color for the selected item when the list/tree is active
+  list.activeSelectionBackground:  *SELECTION                                   # List/Tree background color for the selected item when the list/tree is active
   list.activeSelectionForeground: *FG                                           # List/Tree foreground color for the selected item when the list/tree is active
   list.dropBackground: *SELECTION                                               # List/Tree drag and drop background when moving items around using the mouse
   list.focusBackground: *LineHighlight                                          # List/Tree background color for the focused item when the list/tree is active
   list.highlightForeground: *CYAN                                               # List/Tree foreground color of the match highlights when searching inside the list/tree
-  list.hoverBackground:  !alpha [*SELECTION, 65]                                # List/Tree background when hovering over items using the mouse
-  list.inactiveSelectionBackground:  !alpha [*SELECTION, 40]                    # List/Tree background color for the selected item when the list/tree is inactive
+  list.hoverBackground:  *SELECTION                                             # List/Tree background when hovering over items using the mouse
+  list.inactiveSelectionBackground:  *SELECTION                                 # List/Tree background color for the selected item when the list/tree is inactive
   list.inactiveSelectionForeground:                                             # List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not
   list.warningForeground: *ORANGE                                               # Color of warning decorations in the explorer
   list.errorForeground: *RED                                                    # Color of error decorations in the explorer
@@ -144,15 +145,15 @@ colors:
   activityBar.dropBackground:                                                   # Drag and drop feedback color for the Activity Bar items
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
   activityBar.border:                                                           # Activity Bar border color with the Side Bar
-  activityBar.activeBorder: !alpha [*PINK, 80]                                  # Activity Bar indicator color
-  activityBar.activeBackground: !alpha [*SELECTION, 40]                            # Activity Bar indicator background color
-  activityBarBadge.background: *PINK                                            # Activity notification badge background color
+  activityBar.activeBorder: *CYAN                                               # Activity Bar indicator color
+  activityBar.activeBackground: *SELECTION                                      # Activity Bar indicator background color
+  activityBarBadge.background: *CYAN                                            # Activity notification badge background color
   activityBarBadge.foreground: *BG                                              # Activity notification badge foreground color
 
   # Side Bar
   sideBar.background: *BGDark                                                   # Side Bar background color
   sideBar.foreground:                                                           # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
-  sideBar.border:                                                               # Side Bar border color on the side separating the editor
+  sideBar.border: *SELECTION                                                    # Side Bar border color on the side separating the editor
   sideBarTitle.foreground: *FG                                                  # Side Bar title foreground color
   sideBarSectionHeader.background: *BG                                          # Side Bar section header background color
   sideBarSectionHeader.foreground:                                              # Side Bar section header foreground color
@@ -185,7 +186,7 @@ colors:
   editor.selectionBackground: *SELECTION                                        # Color of the editor selection
   editor.selectionHighlightBackground: *BGLighter                               # Color for regions with the same content as the selection
   editor.inactiveSelectionBackground:                                           # Color of the selection in an inactive editor
-  editor.foldBackground: *BGDark                                                # Background color for folded ranges
+  editor.foldBackground: *SELECTION                                             # Background color for folded ranges
 
   editor.wordHighlightBackground: !alpha [ *CYAN, 50 ]                          # Background color of a symbol during read-access, for example when reading a variable
   editor.wordHighlightStrongBackground: !alpha [ *GREEN, 50 ]                   # Background color of a symbol during write-access, for example when writing to a variable
@@ -194,9 +195,9 @@ colors:
   editor.findMatchHighlightBackground: !alpha [ *WHITE, 40 ]                    # Color of the other search matches
   editor.findRangeHighlightBackground: *LineHighlight                           # Color the range limiting the search
 
-  editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
+  editor.hoverHighlightBackground: *SELECTION                                   # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground: *BGLight                                      # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBackground: *SELECTION                                    # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder: *BG                                               # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
@@ -318,8 +319,8 @@ colors:
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
   statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.prominentHoverBackground: *ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
-  statusBarItem.remoteForeground: *FG                                           # Background color for the remote indicator on the status bar
-  statusBarItem.remoteBackground: *PURPLE                                       # Foreground color for the remote indicator on the status bar
+  statusBarItem.remoteForeground: *BG                                           # Background color for the remote indicator on the status bar
+  statusBarItem.remoteBackground: *CYAN                                         # Foreground color for the remote indicator on the status bar
   statusBar.border:
 
   # Title Bar Colors (MacOS Only)
