@@ -3,7 +3,8 @@ author: Midisoft
 maintainers:
   - Felipe Bergamaschi <felipeebegamaschi@gmail.com>
 semanticClass: anubis.theme
-
+# "editorIndentGuide.background": "#ffffff1a",
+#     "editorIndentGuide.activeBackground": "#6d7a8a",
 anubis:
   base:
     - &BG                   '#212d3b'
@@ -211,8 +212,8 @@ colors:
   editor.snippetFinalTabstopHighlightBorder: *GREEN                             # Highlight border color of the final tabstop of a snippet
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
-  editorIndentGuide.background: *NonText                                        # Color of the editor indentation guides
-  editorIndentGuide.activeBackground: !alpha [ *WHITE, 45]                      # Color of the active indentation guide
+  editorIndentGuide.background: *SELECTION                                        # Color of the editor indentation guides
+  editorIndentGuide.activeBackground: *NonText                      # Color of the active indentation guide
   editorRuler.foreground: *NonText                                              # Color of the editor rulers
 
   editorCodeLens.foreground: *COMMENT                                           # Foreground color of an editor CodeLens
