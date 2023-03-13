@@ -58,8 +58,8 @@ colors:
   terminal.ansiBrightBlack: *COLOR8
   terminal.ansiBrightRed: *COLOR9
   terminal.ansiBrightGreen: *COLOR10
-  terminal.ansiBrightYellow: *COLOR11
-  terminal.ansiBrightBlue: *COLOR12
+  terminal.ansiBrightYellow: *CYAN
+  terminal.ansiBrightBlue: *CYAN
   terminal.ansiBrightMagenta: *COLOR13
   terminal.ansiBrightCyan: *COLOR14
   terminal.ansiBrightWhite: *COLOR15
@@ -74,6 +74,8 @@ colors:
   terminal.selectionBackground: !alpha [*COMMENT, 45]
   terminalCursor.background: *COLOR0
   terminalCursor.foreground: *FG
+  terminal.tab.activeBorder: *CYAN
+  terminal.border: *SELECTION
 
   # Contrast Colors
   contrastBorder: *BGDarker                                                     # An extra border around elements to separate them from others for greater contrast
@@ -123,7 +125,7 @@ colors:
   badge.background: *SELECTION                                                  # Badge background color
 
   # Progress Bar
-  progressBar.background: *PINK                                                 # Background color of the progress bar shown for long running operations
+  progressBar.background: *CYAN                                                 # Background color of the progress bar shown for long running operations
 
   # List & Trees
   list.activeSelectionBackground:  *SELECTION                                   # List/Tree background color for the selected item when the list/tree is active
@@ -169,7 +171,7 @@ colors:
   tab.activeBackground: *BG                                                     # Active Tab background color
   tab.activeForeground: *FG                                                     # Active Tab foreground color in an active group
   tab.border: *BGDarker                                                         # Border to separate Tabs from each other
-  tab.activeBorderTop: !alpha [*PINK, 80]                                       # A border drawn to the top of the active tab
+  tab.activeBorderTop: *CYAN                                       # A border drawn to the top of the active tab
   tab.activeBorder:                                                             # A border drawn to the bottom of the active tab
   tab.unfocusedActiveBorder:                                                    # A border drawn to the bottom of the active tab in an editor group that is not focused
   tab.inactiveBackground: *BGDark                                               # Inactive Tab background color
@@ -303,8 +305,8 @@ colors:
 
   # Panel Colors
   panel.background: *BG                                                         # Panel background color
-  panel.border: *PINK                                                         # Panel border color on the top separating to the editor
-  panelTitle.activeBorder: *PINK                                                # Border color for the active panel title
+  panel.border: *SELECTION                                                         # Panel border color on the top separating to the editor
+  panelTitle.activeBorder: *CYAN                                                # Border color for the active panel title
   panelTitle.activeForeground: *FG                                              # Title color for the active panel
   panelTitle.inactiveForeground: !alpha [*FG, 80]                                       # Title color for the inactive panel
 
